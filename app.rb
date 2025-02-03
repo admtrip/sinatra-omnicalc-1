@@ -29,6 +29,5 @@ get("/square_root/results") do
   @the_num_2 = params.fetch("users_number_2").to_f
 
   @square_root = @the_num_2 ** 0.5
-  
   erb(:square_form_results)
 end
