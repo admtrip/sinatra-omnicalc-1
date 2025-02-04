@@ -1,39 +1,13 @@
- <h1>
-  Payment Results
-</h1>
-
-<%= params %>
-
-<dl>
-  <dt>
-    APR
-  </dt>
-  <dd>
-    95.0000%
-  </dd>
-
-  <dt>
-    Number of years
-  </dt>
-  <dd>
-    3
-  </dd>
-
-  <dt>
-    Principal
-  </dt>
-  <dd>
-    $123.00
-  </dd>
-
-  <dt>
-    Payment
-  </dt>
-  <dd>
-    $10.41
-  </dd>
-</dl>
-
-<a href="/payment/new">
-  Calculate another payment
-</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Payment Result</title>
+</head>
+<body>
+  <h2>Loan Payment Result</h2>
+  <p><strong>APR:</strong> <%= @formatted_apr %></p>
+  <p><strong>Number of Years:</strong> <%= @years %></p>
+  <p><strong>Principal:</strong> <%= @formatted_principal %></p>
+  <p><strong>Monthly Payment:</strong> <%= @formatted_monthly_payment %></p>
+</body>
+</html>

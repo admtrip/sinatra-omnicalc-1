@@ -1,21 +1,21 @@
-<form action="/payment/results">
-  <div>
-  <label for="hippo">APR</label>
-      <input id="hippo" type="text" name="apr">
-  </div>
-    
-    
-  <div>
-    <label for="rhino">Number of years</label>
-      <input id="rhino" type="text" name="number_years">
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Payment Calculator</title>
+</head>
+<body>
+  <h2>Loan Payment Calculator</h2>
+  <form action="/payment/results" method="get">
+    <label for="user_apr">APR (%)</label>
+    <input type="text" id="user_apr" name="user_apr" required>
 
-  <div>
-    <label for="cat">Principal</label>
-      <input id="cat" type="text" name="principal">
-  </div>
-  
-  <div>
-  <button>Calculate monthly payment</button>
-  </div>
-</form>
+    <label for="user_years">Number of Years</label>
+    <input type="text" id="user_years" name="user_years" required>
+
+    <label for="user_pv">Principal ($)</label>
+    <input type="text" id="user_pv" name="user_pv" required>
+
+    <button type="submit">Calculate monthly payment</button>
+  </form>
+</body>
+</html>
