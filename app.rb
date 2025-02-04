@@ -31,3 +31,14 @@ get("/square_root/results") do
   @square_root = @the_num_2 ** 0.5
   erb(:square_form_results)
 end
+
+get("/payment/new") do
+  erb(:payment_form)
+end
+
+get("/payment/results") do
+  @apr = params.fetch("users_number_2").to_f
+
+  @square_root = @the_num_2 ** 0.5
+  erb(:payment_form_results)
+end
